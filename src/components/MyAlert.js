@@ -11,7 +11,7 @@ import {
 
 export default function MyAlert(props) {
     const [isOpen, setIsOpen] = useState(props.isOpen)
-    const uniqueLink = `${window.location.href}/poll/${props.link}`
+    const uniqueLink = `${window.location.href}poll/${props.link}`
     const onClose = () => {
         setIsOpen(false);
         props.finish();
